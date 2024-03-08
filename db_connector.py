@@ -1,13 +1,6 @@
-from datetime import datetime
-from time import sleep
-from multiprocessing import Process
-import json
 import random
-import requests
 import sqlalchemy
-from sqlalchemy import text
 import yaml
-from data_transform import DateTimeEncoder
 
 random.seed(100)
 
