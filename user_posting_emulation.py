@@ -22,8 +22,7 @@ def get_data(source_table=None, random_row=None):
 def post_data(data=None, topic_name=None, invoke_url=None, headers=None):
     payload = json.dumps({
         "records": [
-                {
-                #Data should be send as pairs of column_name:value, with different columns separated by commas       
+                {       
                 "value": data
                 }
             ]
@@ -49,7 +48,6 @@ def run_posting_emulation():
         post_data(data=pin_result, topic_name=f"{uuid}.pin", invoke_url=invoke_url, headers=headers)
         post_data(data=geo_result, topic_name=f"{uuid}.geo", invoke_url=invoke_url, headers=headers)
         post_data(data=user_result, topic_name=f"{uuid}.user", invoke_url=invoke_url, headers=headers)
-        print('Working')
 
 
 if __name__ == "__main__":
