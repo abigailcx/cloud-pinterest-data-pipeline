@@ -9,5 +9,4 @@ __pycache__/
 *.pem
 db_creds.yaml
 
-# notes
-development_notes.txt
+.vscode
